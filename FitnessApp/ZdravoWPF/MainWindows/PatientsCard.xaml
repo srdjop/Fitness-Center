@@ -1,0 +1,40 @@
+﻿<Window x:Class="ZdravoWPF.MainWindows.PatientsCard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoWPF.MainWindows"
+        mc:Ignorable="d"
+        Title="PatientsCard" Height="450" Width="1007" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="IZMENI" HorizontalAlignment="Left" Margin="680,246,0,0" VerticalAlignment="Top" Height="64" Width="92" Click="Izmeni_Informacije"/>
+        <CheckBox Name="chcbEnabled" Content="Omoguci izmene" HorizontalAlignment="Left" Margin="664,217,0,0" VerticalAlignment="Top" Width="114" Checked="chcbEnabled_Checked" Unchecked="chcbEnabled_Unchecked"/>
+        <Label Content="Ime" HorizontalAlignment="Left" Margin="30,22,0,0" VerticalAlignment="Top" Width="146" FontSize="16" Height="45"/>
+        <Label Content="Prezime" HorizontalAlignment="Left" Margin="30,52,0,0" VerticalAlignment="Top" Width="146" FontSize="16" Height="44"/>
+        <Label Content="Datum Rodjenja" HorizontalAlignment="Left" Margin="30,82,0,0" VerticalAlignment="Top" Width="146" FontSize="16" Height="45"/>
+        <Label Content="JMBG" HorizontalAlignment="Left" Margin="30,112,0,0" VerticalAlignment="Top" Width="146" FontSize="16" Height="45"/>
+        <Label Name="txtIme" HorizontalAlignment="Left" Margin="157,22,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Height="28"/>
+        <Label Name="txtPrezime" HorizontalAlignment="Left" Margin="157,52,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Height="28"/>
+        <Label Name="txtDatumRodjenja" HorizontalAlignment="Left" Margin="157,82,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Height="28"/>
+        <Label Name="txtJMBG" HorizontalAlignment="Left" Margin="157,112,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Height="28"/>
+        <TextBox IsEnabled="False" Name="txtDetails" HorizontalAlignment="Left" Margin="43,177,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="591" Height="49"/>
+        <TextBox IsEnabled="False" Name="txtDifficulties" HorizontalAlignment="Left" Margin="43,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="591" Height="50"/>
+        <TextBox IsEnabled="False" Name="txtDiagnostics" HorizontalAlignment="Left" Margin="43,349,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="591" Height="50"/>
+        <Label Content="Details" HorizontalAlignment="Left" Margin="43,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Diagnostics" HorizontalAlignment="Left" Margin="43,323,0,0" VerticalAlignment="Top"/>
+        <Label Content="Difficultie" HorizontalAlignment="Left" Margin="43,234,0,0" VerticalAlignment="Top"/>
+        <Label Content="Recept" HorizontalAlignment="Left" Margin="378,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.348" FontSize="16"/>
+        <TextBox IsEnabled="False" Name="txtPersciption" HorizontalAlignment="Left" Margin="381,57,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="394" Height="50" FontSize="16"/>
+        <ComboBox Name="cbMedicine" HorizontalAlignment="Left" Margin="438,116,0,0" VerticalAlignment="Top" Width="254" FontSize="16"/>
+        <ListBox Name="lbMedicine" Width="200" Margin="797,57,10,20"/>
+        <Label Content="Prepisani Lekovi" HorizontalAlignment="Left" Margin="797,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.348" FontSize="16"/>
+        <Label Content="Lekovi" HorizontalAlignment="Left" Margin="378,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.348" FontSize="16"/>
+        <Button Content="Dodaj&#xD;&#xA; Lek" HorizontalAlignment="Left" Margin="701,116,0,0" VerticalAlignment="Top" Height="58" Width="74" Click="DodajLek"/>
+    </Grid>
+</Window>

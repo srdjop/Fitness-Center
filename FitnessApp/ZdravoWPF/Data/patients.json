@@ -1,0 +1,44 @@
+[
+  {
+    "User": {
+      "Id": 2,
+      "Jmbg": "0705000890018",
+      "Username": "pedja",
+      "Password": "132",
+      "Name": "Predrag",
+      "Surname": "Mirkovic",
+      "Email": "mirkovic0705@gmail.com",
+      "Address": "Heroja Pinkija",
+      "Phone": "0666224414",
+      "DateOfBirth": "2000-07-05T00:00:00"
+    }
+  },
+  {
+    "User": {
+      "Id": 1,
+      "Jmbg": "1404000123456",
+      "Username": "srki1234",
+      "Password": "srkiiii",
+      "Name": "Srdjan",
+      "Surname": "Protic",
+      "Email": "srkii@gmail.com",
+      "Address": "adresa22",
+      "Phone": "065789987",
+      "DateOfBirth": "2000-07-05T00:00:00"
+    }
+  },
+  {
+    "User": {
+      "Id": 4,
+      "Jmbg": "1404000123649",
+      "Username": "minja",
+      "Password": "123",
+      "Name": "Pero",
+      "Surname": "Djuric",
+      "Email": "srkii@gmail.com",
+      "Address": "adresa22",
+      "Phone": "065789987",
+      "DateOfBirth": "0001-01-01T00:00:00"
+    }
+  }
+]

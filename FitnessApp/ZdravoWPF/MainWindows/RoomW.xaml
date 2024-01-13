@@ -1,0 +1,42 @@
+﻿<Window x:Class="ZdravoWPF.MainWindows.RoomW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoWPF.MainWindows"
+        mc:Ignorable="d"
+        Title="RoomW" Height="486" Width="861" Loaded="Window_Loaded">
+    <Grid Margin="10,0,10,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid CanUserAddRows="False" Width="Auto" IsReadOnly="True" Name="dtGrid" SelectionChanged="dtGrid_SelectionChanged" Margin="340,0,18,137" ItemsSource="{Binding}" />
+
+        <Button Content="CREATE" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="CreateRoom_Click"/>
+        <Button Content="EDIT" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="UpdateRoom_Click"/>
+        <Button Content="DELETE" HorizontalAlignment="Left" Margin="689,369,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="DeleteRoom_Click"/>
+        <Button x:Name="CreateRoom" Content="Add New&#xA;   Room&#xA;" HorizontalAlignment="Left" Margin="57,197,0,0" VerticalAlignment="Top" Height="38" Width="78" Click="CreateRoom_Click"/>
+        <TextBox x:Name="txtRoomName" HorizontalAlignment="Left" Margin="148,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="148,154,0,0" VerticalAlignment="Top" Width="120" Height="163" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+        <ComboBox x:Name="cmbRoomType" HorizontalAlignment="Left" Margin="148,73,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" >
+            <ComboBoxItem Content="Operation Room"/>
+            <ComboBoxItem Content="Resting Room"/>
+            <ComboBoxItem Content="Waiting Room"/>
+            <ComboBoxItem Content="Checkup Room"/>
+            <ComboBoxItem Content="Laboratory"/>
+            <ComboBoxItem Content="Intensive Care"/>
+            <ComboBoxItem Content="Emergency Room"/>
+        </ComboBox>
+        <ComboBox x:Name="cmbFloor" HorizontalAlignment="Left" Margin="148,113,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" >
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+        </ComboBox>
+        <Label Content="ROOM NAME" HorizontalAlignment="Left" Margin="60,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="ROOM TYPE" HorizontalAlignment="Left" Margin="60,71,0,0" VerticalAlignment="Top"/>
+        <Label Content="FLOOR" HorizontalAlignment="Left" Margin="60,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="DESCRIPTION" HorizontalAlignment="Left" Margin="60,151,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

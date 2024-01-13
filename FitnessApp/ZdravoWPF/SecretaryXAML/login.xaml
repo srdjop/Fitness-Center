@@ -1,0 +1,19 @@
+﻿<Window x:Class="ZdravoWPF.SecretaryXAML.login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoWPF.SecretaryXAML"
+        mc:Ignorable="d"
+        Title="login" Height="450" Width="800">
+    <Grid Margin="0,0,0,-86">
+
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Center" Height="34" Margin="0,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Background="#FFAEAAAA"/>
+        <Label Content="Username:" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" FontSize="18" Width="160" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="320,182,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial" FontWeight="Bold"/>
+        <PasswordBox x:Name="passwordTextBox" HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top"  Width="160" Height="34" Background="#FFAEAAAA"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,340,0,0" VerticalAlignment="Top" Width="100" Height="45" Background="#FFABB1B4" BorderBrush="#FF020202" Click="LogIn"/>
+        <Label x:Name="errorMessage" Grid.ColumnSpan="3" Content="Username or password not valid" Foreground="#FFD71919" FontSize="16" HorizontalAlignment="Left" Margin="284,103,0,0" VerticalAlignment="Top" Background="{x:Null}" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

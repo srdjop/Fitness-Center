@@ -1,0 +1,17 @@
+[
+  {
+    "specialization": "Primary Care",
+    "User": {
+      "Id": 1,
+      "Jmbg": "1210000800102",
+      "Username": "filip",
+      "Password": "ftn",
+      "Name": "Filip",
+      "Surname": "mrdjanovic",
+      "Email": "mrdjanovic.in27.2019@uns.ac.rs",
+      "Address": "Bulevar Evrope 15",
+      "Phone": "062203143",
+      "DateOfBirth": "2000-10-12T00:00:00"
+    }
+  }
+]

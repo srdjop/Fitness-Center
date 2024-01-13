@@ -1,0 +1,18 @@
+[
+    {
+        "specialization": "Primary Care",
+        "User": {
+            "Id": 1,
+            "Jmbg": "1252100821118",
+            "Username": "isidora",
+            "Password": "123",
+            "Name": "Isidora",
+            "Surname": "Tulumbic",
+            "Email": "isidora@gmail.com",
+            "Address": "Bulevar Cara Lazara",
+            "Phone": "06432432432",
+            "DateOfBirth": "2000-01-01T00:00:00"
+        }
+
+    }
+]
